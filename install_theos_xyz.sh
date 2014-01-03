@@ -28,6 +28,7 @@ install_theos() {
     # get IOSurfaceAPI.h
     find /System -name "IOSurfaceAPI.h" 2>/dev/null | xargs -I file cp -f file $THEOS/include/IOSurface/
 	#TODO also need to manually comment out two lines with xpc_object_t, or make error
+	echo "TODO - Comment out two lines with xpc_object_t!!"
 
     # clone CaptainHook.git
     cd $THEOS/include/
